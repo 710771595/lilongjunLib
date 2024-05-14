@@ -7,7 +7,7 @@
 //
 
 #import "LIViewController.h"
-//#import <liljunLib/>
+//#import <liljunLib/Ns>
 @interface LIViewController ()
 
 @end

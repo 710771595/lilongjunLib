@@ -10,6 +10,10 @@
 		1C6A5264A29F2246D49EE7FEE3D22D55 /* Pods-liljunLib_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B343C38E878A7838D147663B7C80B142 /* Pods-liljunLib_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32BDCC9088281302E21E848892334BCC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		3D8CCB5C18A0C86114A360A0CC807B93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		3FDCD4EC2BF3141B00995F0D /* NSString+numberToString.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FDCD4E82BF3141B00995F0D /* NSString+numberToString.h */; };
+		3FDCD4ED2BF3141B00995F0D /* UIImage+Capture.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FDCD4E92BF3141B00995F0D /* UIImage+Capture.h */; };
+		3FDCD4EE2BF3141B00995F0D /* UIImage+Capture.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDCD4EA2BF3141B00995F0D /* UIImage+Capture.m */; };
+		3FDCD4EF2BF3141B00995F0D /* NSString+numberToString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDCD4EB2BF3141B00995F0D /* NSString+numberToString.m */; };
 		4258B1261ABCC8FF7E6B6B99FE7E10DE /* Pods-liljunLib_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 185DB9E4A2BDFC58739691CB1FFCCEE4 /* Pods-liljunLib_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55895299BE69652A00B84AAF59749715 /* Pods-liljunLib_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFBC43CF326F271A5FA775955FC6568 /* Pods-liljunLib_Example-dummy.m */; };
 		595F3500F09950C2477E599EA1F99D38 /* liljunLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F4A01C259B9645A6279DE9E67B8BD2 /* liljunLib-dummy.m */; };
@@ -46,23 +50,27 @@
 		2804106A21A41DB371CFD9E5060E5E09 /* liljunLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = liljunLib.modulemap; sourceTree = "<group>"; };
 		28D34A1C6AE9D061AE2CD36345676B8D /* liljunLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = liljunLib.debug.xcconfig; sourceTree = "<group>"; };
 		3E8702B775F7CFADD709538438F55652 /* Pods-liljunLib_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-liljunLib_Example-frameworks.sh"; sourceTree = "<group>"; };
+		3FDCD4E82BF3141B00995F0D /* NSString+numberToString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+numberToString.h"; sourceTree = "<group>"; };
+		3FDCD4E92BF3141B00995F0D /* UIImage+Capture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Capture.h"; sourceTree = "<group>"; };
+		3FDCD4EA2BF3141B00995F0D /* UIImage+Capture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Capture.m"; sourceTree = "<group>"; };
+		3FDCD4EB2BF3141B00995F0D /* NSString+numberToString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+numberToString.m"; sourceTree = "<group>"; };
 		4167732BBE3BBB0D1DBBC4D2716EB0CC /* Pods-liljunLib_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-liljunLib_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4D9231C1153980C8277ABE919D436FD3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		4D9231C1153980C8277ABE919D436FD3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5BFBC43CF326F271A5FA775955FC6568 /* Pods-liljunLib_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-liljunLib_Example-dummy.m"; sourceTree = "<group>"; };
 		625ADFF01847466F095DC9D0D7B2BCA9 /* Pods-liljunLib_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-liljunLib_Tests-Info.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7BD8615B98785C8C2499BAD3FEC81282 /* liljunLib */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = liljunLib; path = liljunLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B19814695BEAEA1CC223CB1455E0024 /* liljunLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "liljunLib-umbrella.h"; sourceTree = "<group>"; };
 		8CFB6D684BA6863645D940587A08368D /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = liljunLib/Classes/ReplaceMe.m; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AFAE9EEE510A1332663D9EA11D8FAF1A /* liljunLib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "liljunLib-prefix.pch"; sourceTree = "<group>"; };
 		B343C38E878A7838D147663B7C80B142 /* Pods-liljunLib_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-liljunLib_Tests-umbrella.h"; sourceTree = "<group>"; };
 		B6DC9F700EA0C9CC0EAEE1F4CAF68796 /* Pods-liljunLib_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-liljunLib_Example-Info.plist"; sourceTree = "<group>"; };
 		B8F4A01C259B9645A6279DE9E67B8BD2 /* liljunLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "liljunLib-dummy.m"; sourceTree = "<group>"; };
 		DB1DE91B7E77365AFA51333CFC2173D6 /* Pods-liljunLib_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-liljunLib_Tests-dummy.m"; sourceTree = "<group>"; };
 		DC3B7555613A916D7DA6F0D1AB4CC44D /* liljunLib-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "liljunLib-Info.plist"; sourceTree = "<group>"; };
-		E5EB60E0E91D126875302D4BC5F9883E /* liljunLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = liljunLib.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		E833A89AE4FFB978942FE0F9C88B024A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		E5EB60E0E91D126875302D4BC5F9883E /* liljunLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = liljunLib.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E833A89AE4FFB978942FE0F9C88B024A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		EB0FAE90F4D2299F294D28B1A81952AC /* Pods-liljunLib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-liljunLib_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EB29D4F03338B1194826BBB80BD9F592 /* liljunLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = liljunLib.release.xcconfig; sourceTree = "<group>"; };
 		ECE1EA8557A211DD2059E9E2164AA761 /* Pods-liljunLib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-liljunLib_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,12 +137,25 @@
 		3A11B8375D649D1CAD6BA10231E413FB /* liljunLib */ = {
 			isa = PBXGroup;
 			children = (
+				3FDCD4E72BF3141B00995F0D /* category */,
 				8CFB6D684BA6863645D940587A08368D /* ReplaceMe.m */,
 				1FEA3DD0E83DC2BF2FA31022EDED9CF9 /* Pod */,
 				648AF38A5FEA97E55C60A75205B16B88 /* Support Files */,
 			);
 			name = liljunLib;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		3FDCD4E72BF3141B00995F0D /* category */ = {
+			isa = PBXGroup;
+			children = (
+				3FDCD4E82BF3141B00995F0D /* NSString+numberToString.h */,
+				3FDCD4E92BF3141B00995F0D /* UIImage+Capture.h */,
+				3FDCD4EA2BF3141B00995F0D /* UIImage+Capture.m */,
+				3FDCD4EB2BF3141B00995F0D /* NSString+numberToString.m */,
+			);
+			name = category;
+			path = ../category;
 			sourceTree = "<group>";
 		};
 		4BFE63FCBB8DC81D02ABE7F2A8FD0EB6 /* Targets Support Files */ = {
@@ -231,6 +252,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3329CD4CC56CFAFDCE3211FB5F17DF8 /* liljunLib-umbrella.h in Headers */,
+				3FDCD4EC2BF3141B00995F0D /* NSString+numberToString.h in Headers */,
+				3FDCD4ED2BF3141B00995F0D /* UIImage+Capture.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +408,8 @@
 			files = (
 				595F3500F09950C2477E599EA1F99D38 /* liljunLib-dummy.m in Sources */,
 				DFF8F8325423AB8F5AFDF978077D1322 /* ReplaceMe.m in Sources */,
+				3FDCD4EF2BF3141B00995F0D /* NSString+numberToString.m in Sources */,
+				3FDCD4EE2BF3141B00995F0D /* UIImage+Capture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,8 +520,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
