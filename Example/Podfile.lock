@@ -1,0 +1,16 @@
+PODS:
+  - liljunLib (0.1.0)
+
+DEPENDENCIES:
+  - liljunLib (from `../`)
+
+EXTERNAL SOURCES:
+  liljunLib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  liljunLib: 3322fedc8937a4a9021ad1f1001eee901fff5d02
+
+PODFILE CHECKSUM: 496e20ec4bad6216cf878ee0866e012713f79fc4
+
+COCOAPODS: 1.15.2

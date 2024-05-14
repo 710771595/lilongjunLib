@@ -1,0 +1,22 @@
+{
+  "name": "liljunLib",
+  "version": "0.1.0",
+  "summary": "A short description of liljunLib.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/lilongjun/liljunLib",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "lilongjun": "v_lilongjun@tal.com"
+  },
+  "source": {
+    "git": "https://github.com/lilongjun/liljunLib.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "liljunLib/Classes/**/*"
+}

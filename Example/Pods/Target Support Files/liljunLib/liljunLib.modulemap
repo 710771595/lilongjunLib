@@ -1,0 +1,6 @@
+framework module liljunLib {
+  umbrella header "liljunLib-umbrella.h"
+
+  export *
+  module * { export * }
+}
