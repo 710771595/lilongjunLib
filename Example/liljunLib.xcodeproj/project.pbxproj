@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3FDCD4DC2BF2F9DF00995F0D /* UIImage+Capture.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDCD4DA2BF2F9DF00995F0D /* UIImage+Capture.m */; };
-		3FDCD4DD2BF2F9DF00995F0D /* NSString+numberToString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDCD4DB2BF2F9DF00995F0D /* NSString+numberToString.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -40,11 +38,7 @@
 
 /* Begin PBXFileReference section */
 		253B5A6A27CDE9881F243258 /* Pods_liljunLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_liljunLib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E7D746AF5540C35A0475B12 /* liljunLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = liljunLib.podspec; path = ../liljunLib.podspec; sourceTree = "<group>"; };
-		3FDCD4D82BF2F9DF00995F0D /* NSString+numberToString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+numberToString.h"; sourceTree = "<group>"; };
-		3FDCD4D92BF2F9DF00995F0D /* UIImage+Capture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Capture.h"; sourceTree = "<group>"; };
-		3FDCD4DA2BF2F9DF00995F0D /* UIImage+Capture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Capture.m"; sourceTree = "<group>"; };
-		3FDCD4DB2BF2F9DF00995F0D /* NSString+numberToString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+numberToString.m"; sourceTree = "<group>"; };
+		2E7D746AF5540C35A0475B12 /* liljunLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = liljunLib.podspec; path = ../liljunLib.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* liljunLib_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = liljunLib_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -112,17 +106,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		3FDCD4D72BF2F9DF00995F0D /* category */ = {
-			isa = PBXGroup;
-			children = (
-				3FDCD4D82BF2F9DF00995F0D /* NSString+numberToString.h */,
-				3FDCD4DB2BF2F9DF00995F0D /* NSString+numberToString.m */,
-				3FDCD4D92BF2F9DF00995F0D /* UIImage+Capture.h */,
-				3FDCD4DA2BF2F9DF00995F0D /* UIImage+Capture.m */,
-			);
-			path = category;
-			sourceTree = "<group>";
-		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -160,7 +143,6 @@
 		6003F593195388D20070C39A /* Example for liljunLib */ = {
 			isa = PBXGroup;
 			children = (
-				3FDCD4D72BF2F9DF00995F0D /* category */,
 				6003F59C195388D20070C39A /* LIAppDelegate.h */,
 				6003F59D195388D20070C39A /* LIAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -382,10 +364,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FDCD4DC2BF2F9DF00995F0D /* UIImage+Capture.m in Sources */,
 				6003F59E195388D20070C39A /* LIAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* LIViewController.m in Sources */,
-				3FDCD4DD2BF2F9DF00995F0D /* NSString+numberToString.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,6 +497,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "liljunLib/liljunLib-Prefix.pch";
 				INFOPLIST_FILE = "liljunLib/liljunLib-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -533,6 +514,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "liljunLib/liljunLib-Prefix.pch";
 				INFOPLIST_FILE = "liljunLib/liljunLib-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
