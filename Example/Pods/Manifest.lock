@@ -1,5 +1,5 @@
 PODS:
-  - liljunLib (0.3.0)
+  - liljunLib (0.5.0)
 
 DEPENDENCIES:
   - liljunLib (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  liljunLib: f1e6c336b5a0374e730150de346a004a0d8c1ace
+  liljunLib: d357bc16db2b7d7c4b99faf844f961b9e65b7cc8
 
 PODFILE CHECKSUM: 496e20ec4bad6216cf878ee0866e012713f79fc4
 
